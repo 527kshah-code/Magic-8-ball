@@ -27,17 +27,17 @@ function shakeMagic8Ball() {
             break;
         case 2:
             answer = 'Most likely';
-            image = 'yes.3-image.jpg';
+            image = 'yes.3-image.jpg'
             color = "text-success";
             break;
         case 3:
             answer = 'Concentrate and ask again';
-            image = 'maybe.1-image.jpg';
+            image = 'maybe.1-image.webp';
             color = "text-success";
             break;
         case 4:
             answer = "Can't predict now";
-            image = 'maybe.2-image.jpg';
+            image = 'maybe.2-image.jpg'
             color = "text-success";
             break;
         case 5:
@@ -47,17 +47,17 @@ function shakeMagic8Ball() {
             break;
         case 6:
             answer = 'My sources say no';
-            image = 'No.1-image.jpg';
+            image = 'No.1-image.jpg'
             color = "text-success";
             break;
         case 7:
             answer = 'Very doubtful';
-            image = 'No.2-image.jpg';
+            image = 'No.2-image.jpg'
             color = "text-success";
             break;
         case 8:
             answer = "Don't count on it";
-            image = 'No.3-image.jpg';
+            image = 'No.3-image.jpg'
             color = "text-success";
             break;
     }
