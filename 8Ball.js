@@ -22,7 +22,7 @@ function shakeMagic8Ball() {
             break;
         case 1:
             answer = 'You may rely on it';
-            image = 'yes.2-image.jpg';
+            image = 'yes.2-image.jpg'
             color = "text-success";
             break;
         case 2:
@@ -32,7 +32,7 @@ function shakeMagic8Ball() {
             break;
         case 3:
             answer = 'Concentrate and ask again';
-            image = 'maybe.1-image.webp';
+            image = 'maybe.1-image.webp'
             color = "text-success";
             break;
         case 4:
@@ -42,7 +42,7 @@ function shakeMagic8Ball() {
             break;
         case 5:
             answer = 'Ask again later';
-            image = 'maybe.3-image.jpg';
+            image = 'maybe.3-image.jpg'
             color = "text-success";
             break;
         case 6:
