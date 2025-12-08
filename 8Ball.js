@@ -66,3 +66,32 @@ function shakeMagic8Ball() {
         document.getElementById('response-text').classList = `display-4 text-center strong${color}`
         document.getElementById('response-img').src = image
 }
+function shakeMagic8Ball() {
+    const question = prompt("What is your question for the Magic 8 Ball");
+
+    if (question === null || !question.trim()) {
+        document.getElementById('response-text').innerText = 'Please ask a valid question!';
+        document.getElementById('response-text').className = 'lead text-warning';
+        document.getElementById('response-img').src = 'unHappyFace.jpg';
+        return;
+    }
+
+    const responseText = document.getElementById('response-text');
+    const responseImg = document.getElementById('response-img');
+
+    // Show shaking effect
+    responseText.innerText = "Shaking...";
+    responseImg.src = "https://picsum.photos/seed/shake/500/300";
+    responseImg.classList.add("shake");
+
+    // Wait 1 second before showing the dice roll
+    setTimeout(() => {
+        const diceRoll = Math.floor(Math.random() * 12) + 1; // d12 roll
+        responseText.innerText = `You rolled a ${diceRoll}!`;
+
+        // Optional: update image to represent dice (or a magic effect)
+        responseImg.src = `https://picsum.photos/seed/dice${diceRoll}/500/300`;
+
+        responseImg.classList.remove("shake");
+    }, 1000);
+}
